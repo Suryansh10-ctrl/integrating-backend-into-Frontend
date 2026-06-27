@@ -32,3 +32,26 @@ html{
   color:white;
 
 }
+.note>button{
+  margin: 5px;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25;
+  
+}
+
+.note-created-form{
+  display: flex;
+  gap: 1rem;
+  padding-block: 1rem;
+  padding-inline: 3rem;
+}
+form>input{
+  padding: 0.5rem;
+  border-radius: 0.25rem
+}
+form>button{
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  font: bold;
+  font-size: medium;
+}
