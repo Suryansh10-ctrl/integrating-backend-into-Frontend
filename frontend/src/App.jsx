@@ -22,7 +22,7 @@ function App() {
     const {title,desc} = e.target.elements;
     console.log(title.value,desc.value);
 
-    axios.post("https://localhost/3000/api/notes",{
+    axios.post("https://integrating-backend-with-frontend.onrender.com/api/notes",{
       title:title.value,
       desc:desc.value
     })
@@ -34,7 +34,7 @@ function App() {
 
   function handleDelete(id){
     console.log(id);
-    axios.delete("https://localhost/3000/api/notes/"+id)
+    axios.delete("https://integrating-backend-with-frontend.onrender.com/api/notes/"+id)
     .then((res) => {
       console.log(res.data);
       fetchNotes();
@@ -45,7 +45,7 @@ function App() {
   const newTitle = prompt("Enter new title:");
   const newDesc = prompt("Enter new description:");
 
-  axios.patch("https://localhost/3000/api/notes/" + id, {
+  axios.patch("https://integrating-backend-with-frontend.onrender.com/api/notes/" + id, {
     title: newTitle,
     desc: newDesc,
   })
