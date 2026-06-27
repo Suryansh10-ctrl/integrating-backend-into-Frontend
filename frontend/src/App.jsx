@@ -6,7 +6,7 @@ function App() {
 
   function fetchNotes(){
     axios
-      .get("http://localhost:3000/api/notes")
+      .get("https://integrating-backend-with-frontend.onrender.com/api/notes")
       .then(res => {
         console.log(res.data.notes);
         setNotes(res.data.notes);
